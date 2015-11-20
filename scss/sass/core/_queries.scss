@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+$base-fonts-default: 100px; //基准数
+$max-container: 750px;  //最大视屏宽度,根据设计稿而定
+$responsives: 320px, 360px, 375px, 384px, 414px, 480px, 640px, 750px;  // 屏幕断点
+
+@function rem($px){
+    @return $px / $base-fonts-default *1rem;
+}
+// px 转rem
+@mixin fz($values){
+    font-size: $values * $base-fonts-default / $max-container;
+}
+@each $responsive in $responsives{
+  @media only screen and (min-width: #{$responsive}) {
+        html{ @include fz($responsive);}
+   }
+}
+@media only screen and (max-width: 319px) {
+    html{ @include fz(319px);}
+}
