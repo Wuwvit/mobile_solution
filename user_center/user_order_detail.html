@@ -31,15 +31,25 @@
 		<div class="user_order_box">
 			<ul>
 				<li class="order_item order_des_status">
-					<div class="">
-						<div class="order_item_hd">
+					<div class="order_item_hd">
 							<div class="des_hd des_status_hd">
 								<span class="order_number">订单状态</span>
 								<span class="orange">等待付款</span>
 								<a href="###" class="link-btn link-btn-bg">付款</a>
 							</div>
 						</div>
+				</li>
+				<li class="order_item order_des_status">
+					<div class="">
+
+						<div class="order_item_hd">
+								<div class="des_hd des_status_hd des_merchbill">
+									<span class="order_number">商品清单</span>
+
+								</div>
+							</div>
 						<div class="order_item_table co_table co_des_table">
+
 							<table class="h_table">
 								<tr>
 									<td><span class="">参保城市<span></span></td>
@@ -83,7 +93,26 @@
 
 							</div>
 						</div>
+						<div class="select_month">
+								<div class="select_month_wrapper">
+									<a class="month_item actived">2015-8</a>
+									<a class="month_item">2015-9</a>
+									<a class="month_item">2015-10</a>
+									<a class="month_item">2015-11</a>
+									<a class="month_item">2015-12</a>
+									<a class="month_item">2016-01</a>
+									<a class="month_item">2016-02</a>
+									<a class="month_item">2016-03</a>
+									<a class="month_item">2016-04</a>
+									<a class="month_item">2016-05</a>
+									<a class="month_item">2016-06</a>
+									<a class="month_item">2016-07</a>
+								</div>
+							</div>
 						<div class="order_item_table co_table co_des_table co_list_table">
+
+
+
 							<table class="h_table">
 								<tr>
 									<td><span class="">何炅<span></span></td>
@@ -112,6 +141,18 @@
 			</div>
 		</div>
 	</section>
+	<script>
+		var data = ['2015-01','2015-02','2015-03','2015-04','2015-05','2015-06','2015-07'];
+	</script>
+
+	<script src="../public/js/zepto.min.js"></script>
+	<script src="../public/js/sea.js"></script>
+	<script>
+    	seajs.use(['_util.js','gplistDetails.js'],function(node){
+    		console.log(node)
+    		ListDetail.init();
+    	})
+	</script>
 </body>
 
 </html>
