@@ -90,40 +90,40 @@
 						<div class="order_item_hd">
 							<div class="des_hd des_status_hd des_list_hd">
 								<span class="order_number">参保名单明细</span>
-
+								<i class="small c666">（点击参保人查看明细）</i>
 							</div>
 						</div>
 						<div class="select_month">
-								<div class="select_month_wrapper">
-									<a class="month_item actived">2015-8</a>
-									<a class="month_item">2015-9</a>
-									<a class="month_item">2015-10</a>
-									<a class="month_item">2015-11</a>
-									<a class="month_item">2015-12</a>
-									<a class="month_item">2016-01</a>
-									<a class="month_item">2016-02</a>
-									<a class="month_item">2016-03</a>
-									<a class="month_item">2016-04</a>
-									<a class="month_item">2016-05</a>
-									<a class="month_item">2016-06</a>
-									<a class="month_item">2016-07</a>
-								</div>
+							<div class="select_month_wrapper">
+								<a class="month_item actived">2015-8</a>
+								<a class="month_item">2015-9</a>
+								<a class="month_item">2015-10</a>
+								<a class="month_item">2015-11</a>
+								<a class="month_item">2015-12</a>
+								<a class="month_item">2016-01</a>
+								<a class="month_item">2016-02</a>
+								<a class="month_item">2016-03</a>
+								<a class="month_item">2016-04</a>
+								<a class="month_item">2016-05</a>
+								<a class="month_item">2016-06</a>
+								<a class="month_item">2016-07</a>
 							</div>
+						</div>
 						<div class="order_item_table co_table co_des_table co_list_table">
 
 
 
 							<table class="h_table">
 								<tr>
-									<td><span class="">何炅<span></span></td>
+									<td><a class="event_item_detail">何炅</a></td>
 									<td class="align-left"><span>手机号：13923704244 </span><br> <span>身份证：452131198803100269</span></td>
 								</tr>
 								<tr>
-									<td><span class="">赵丽颖</span></td>
+									<td><a class="event_item_detail">何炅</a></td>
 									<td class="align-left"><span>手机号：13923704244 </span><br> <span>身份证：452131198803100269</span></td>
 								</tr>
 								<tr>
-									<td><span class="">赵丽颖</span></td>
+									<td><a class="event_item_detail">何炅</a></td>
 									<td class="align-left"><span>手机号：13923704244 </span><br> <span>身份证：452131198803100269</span></td>
 								</tr>
 
@@ -142,14 +142,18 @@
 		</div>
 	</section>
 	<script>
-		var data = ['2015-01','2015-02','2015-03','2015-04','2015-05','2015-06','2015-07'];
 	</script>
-
-	<script src="../public/js/zepto.min.js"></script>
+	<script src="../public/js/template-native.js"></script>
 	<script src="../public/js/sea.js"></script>
 	<script>
-    	seajs.use(['_util.js','gplistDetails.js'],function(node){
-    		console.log(node)
+	seajs.config({
+		  alias: {
+
+		    'zepto': 'zepto.min.js'
+		  }
+		});
+    	seajs.use(['_util.js','gplistDetails.js','template-native.js'],function($,node){
+    		console.log(node);
     		ListDetail.init();
     	})
 	</script>

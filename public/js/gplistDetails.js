@@ -1,13 +1,19 @@
-define("gplistDetails.js",['template-native.js'] ,function(require, exports, module) {
+define("gplistDetails.js",function(require, exports, module) {
+  // var testa = require('test1');
+  var $ = require('zepto');
+
   !function($, win) {
+
     /**
      * [list 参保名单缴费明细交互处理]
      * @return {[type]} [description]
      */
+    // var tpl = require('template-native');
+    // console.log(tpl);
     var document = win.document;
     var defaults = {
-      monthObj  : "select_month_wrapper",
-      listTableObj : "h_table",
+      monthObj  : ".select_month_wrapper",
+      listTableObj : ".h_table",
       /**
        * @return {undefined}
        */
@@ -24,16 +30,14 @@ define("gplistDetails.js",['template-native.js'] ,function(require, exports, mod
       onPullEnd : function() {
       }
     };
+
     var list = function(options){
-      options.monthObj = querysele(options.monthObj);
-      options.listTableObj = querysele(options.listTableObj);
-      this.options = $.extend({}, defaults, options);
+      this.opts = $.extend({}, defaults, options);
       this.initEvent();
     }
     list.prototype = {
       initEvent : function(){
-        // console.log(666);
-        options.monthObj.empty();
+          $(this.opts.monthObj).addClass('aaa')
       }
     }
     win.ListDetail = {
@@ -50,3 +54,5 @@ define("gplistDetails.js",['template-native.js'] ,function(require, exports, mod
   }(window.jQuery || window.Zepto, window);
   module.exports = ListDetail;
 });
+
+

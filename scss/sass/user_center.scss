@@ -58,6 +58,9 @@ $img-user-center :"../../images/user/";
 	}
 }
 // commmon
+i{
+	font-style:normal;
+}
 .c666 {
 	color:#666;
 }
@@ -340,6 +343,17 @@ $img-user-center :"../../images/user/";
 }
 .select_month::-webkit-scrollbar {
     display: none;
+}
+.event_item_detail {
+	display: block;
+    width: 100%;
+    /* height: 100%; */
+    /* line-height: 100%; */
+    padding: rem(36px);
+    color:#333;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,.1);
+    -webkit-touch-callout: none;
 }
 /*!=== order-detail:start===**/
 /*!===order-coupon: start ===**/

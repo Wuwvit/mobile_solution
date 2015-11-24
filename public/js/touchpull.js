@@ -188,8 +188,8 @@ define("common/utils/touchPull.js", function(dataAndEvents, deepDataAndEvents, m
        * @param {?} allBindingsAccessor
        * @return {?}
        */
-      init : function(allBindingsAccessor) {
-        return new init(allBindingsAccessor);
+      init : function(options) {
+        return new init(options);
       },
       DIRECTION : KEY
     };
