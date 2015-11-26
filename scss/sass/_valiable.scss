@@ -7,14 +7,12 @@
 
 //-----------------------------------------------------
 
+$base-fonts-default: 100px; //基准数
+$max-container: 750px;  //最大视屏宽度,根据设计稿而定
+$responsives: 320px, 360px, 375px, 384px, 414px, 480px, 640px, 750px;  // 屏幕断点
 
-// 导入core中的基础文件
-//-----------------------------------------------------
-@import "../../core/setting";
-@import "../../core/css3";
-
-@import "../../core/resetmobile";
-@import "../../core/mixin";
-@import "../../core/grid";
-@import "../../core/media-queries";
-@import "../../core/queries";
+$color-primary:#38b863;
+$color-sub:#666;
+$color-note:#999;
+$color-orange:#ff8a00;
+$img-user-center :"../../images/user/";

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+.clearfix:before,
+.clearfix:after {content:"";display:table;}.clearfix:after {clear:both;overflow:hidden;}.clearfix {zoom:1;}
+// commmon
+i{
+	font-style:normal;
+}
+.c666 {
+	color:#666;
+}
+.small{
+	font-size:rem(22px);
+}
+.orange {
+	color:$color-orange;
+}
+.green {
+	color:$color-primary;
+}
+.gray {
+	background:#ececec;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+.link-btn {
+	@extend %btn;@extend %inline-block;
+	font-size:rem(24px);color:$color-sub;
+	margin-left: rem(30px);
+}
+.link-btn-bd {
+	border:1px solid #ccc;line-height:rem(54px);
+}
+.link-btn-bg {
+	background-color:$color-primary;color:#fff;
+}
+.btn-dia {
+	@extend %btn-dialog ;
+	@extend %inline-block;
+	font-size:rem(24px);color:#333;
+}
+.btn-dia-bd {
+	border:1px solid $color-primary;
+}
+.btn-dia-bg {
+	color:#fff;
+	background-color: $color-primary;
+}
+

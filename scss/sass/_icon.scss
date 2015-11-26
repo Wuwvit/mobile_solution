@@ -1,0 +1,80 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+// icon
+.icon {
+	display:inline-block;
+	width:rem(60px);height:rem(60px);
+	border-radius:50% 50%;
+	&.disabled{
+		background-color:#eee;
+	}
+}
+.icon-order {
+
+	background:#ffba00 url(#{$img-user-center}icon-order.png) no-repeat center;
+	background-size:rem(28px) rem(33px);
+}
+.icon-coupon {
+	background:#f96565 url(#{$img-user-center}icon-coupon.png) no-repeat center;
+	background-size:rem(28px) rem(31px);
+}
+.icon-query {
+	background:#54b3df url(#{$img-user-center}icon-query.png) no-repeat center;
+	background-size:rem(28px) rem(31px);
+}
+.icon-about {
+	background:#30c1b8 url(#{$img-user-center}icon-about.png) no-repeat center;
+	background-size:rem(32px) rem(28px);
+}
+
+.icon-pointm {
+	background:url(#{$img-user-center}icon-pointm.png) no-repeat center;
+	background-size:rem(34px) rem(28px);
+}
+
+.icon-cash {
+	background:url(#{$img-user-center}icon-cash.png) no-repeat center;
+	background-size:rem(31px) rem(28px);
+}
+
+.icon-tel {
+	padding-left: rem(30px);
+	background:url(#{$img-user-center}icon-tel.png) no-repeat left center;
+	background-size:rem(27px) rem(26px);
+}
+.hd_arrow_r{
+	position: absolute;
+    z-index: 9;
+    right: 0;
+}
+.icon-home-hd {
+	display:block;
+	width:rem(110px);height:rem(110px);
+	background:url(../../images/icon-home.png) no-repeat center center;
+	background-size:rem(44px) rem(44px);
+}
+.icon-home-menu01{
+	background:#38b863 url(#{$img-user-center}icon-home-menu01.png) no-repeat center;
+	background-size:rem(33px) rem(30px);
+}
+.icon-home-menu02{
+	background:#1ccac0 url(#{$img-user-center}icon-home-menu02.png) no-repeat center;
+	background-size:rem(26px) rem(27px);
+}
+.icon-home-menu03{
+	background:#79cc21 url(#{$img-user-center}icon-home-menu03.png) no-repeat center;
+	background-size:rem(26px) rem(26px);
+}
+.icon-home-menu04{
+	background:#f9bd3d url(#{$img-user-center}icon-home-menu04.png) no-repeat center;
+	background-size:rem(29px) rem(29px);
+}
+
+.icon-home-menu05{
+	background:#f06679 url(#{$img-user-center}icon-home-menu05.png) no-repeat center;
+	background-size:rem(37px) rem(9px);
+}
+.icon-home-menu06{
+	background:#839ef4 url(#{$img-user-center}icon-home-menu06.png) no-repeat center;
+	background-size:rem(23px) rem(32px);
+}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+/*!==== 异步加载 start=====*/
+// 加载中
+.l-loading-process {
+	width:100%;
+	height:rem(72px);text-align:center;padding: rem(72px) 0;
+	color:$color-note;font-size:rem(24px);
+}
+.l-loading-process-icon {
+	height:rem(42px);
+	width:rem(200px);margin:0 auto;
+	background:url(../../images/loading-icon.gif) no-repeat;
+	background-size:rem(42px) rem(42px);
+}
+//mo-more
+.no-more-box {
+	@extend %p-32;
+	padding-top: rem(36px);
+	padding-bottom: rem(36px);
+}
+.no-more {
+	position: relative;
+	width:100%;
+	display: -webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    color:$color-note;font-size:rem(24px);
+    &:before,&:after {
+	    content: "";
+	    height: 0;
+	    width: 34%;
+	    border-bottom: 1px solid #e8e8e8;
+	    position: absolute;
+	    top: 50%;
+
+    }
+    &:before {
+    	left: 0;
+    }
+    &:after{
+    	right:0;
+    }
+}

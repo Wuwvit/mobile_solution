@@ -1,0 +1,29 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+/*!==== dialog=====*/
+.m_dialog{
+	position: relative;
+	margin:0 auto;
+	min-height:rem(240px);width:90%;
+	background:#fff;border-radius:4px;
+	min-width:rem(600px);
+	.m_box {
+
+	}
+	.m_dialog_bottom {
+		width:100%;
+		padding-bottom:rem(50px);@extend %p-32;
+	}
+	.m_btn_group {
+
+		.btn-dia {
+			width:45%;
+		}
+	}
+}
+
+.d_des {
+	min-height:rem(124px);
+	text-align:center;font-size:rem(24px);
+	padding: rem(64px) rem(100px) rem(32px) rem(100px);
+}

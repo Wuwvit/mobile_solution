@@ -1,0 +1,21 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+.header{
+	position: relative;
+	height:rem(110px);
+	border-bottom:1px solid $color-primary;background-color:#fff;
+	.hd_arrow_l {
+		position: absolute;display: block;
+		z-index:3;
+		width:rem(24px) ;height:rem(43px);margin-top: rem((110px-43px)/2);margin-left: rem(26px);
+		background-image:url(#{$img-user-center}arrow_l.png);background-size:rem(24px) rem(43px);
+
+	}
+	.title {
+		position: absolute;z-index:2;
+		width:100%;height:rem(110px);line-height:rem(110px);
+		color:$color-sub;text-align:center;font-size:rem(30px);
+
+	}
+}
+
