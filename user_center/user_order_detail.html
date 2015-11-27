@@ -141,21 +141,33 @@
 			</div>
 		</div>
 	</section>
-	<script>
+	<form action="#" class="example_form">
+		<input name="email" />
+	</form>
+	<script id="test_template" type="text/html">
+		<p>22222</p>
 	</script>
-	<script src="../public/js/template-native.js"></script>
 	<script src="../public/js/sea.js"></script>
 	<script>
 	seajs.config({
 		  alias: {
-
-		    'zepto': 'zepto.min.js'
+		    'zepto': 'zepto.min.js',
+		    'jquery':'jquery.min.js',
+		    'template-native':'template-native.js'
 		  }
 		});
-    	seajs.use(['_util.js','gplistDetails.js','template-native.js'],function($,node){
-    		console.log(node);
-    		ListDetail.init();
-    	})
+    	// seajs.use(['_util.js','gplistDetails.js','test1'],function(node,a,test){
+    	// 	var a = new test.testA();
+    	// 	ListDetail.init();
+    	// })
+    	seajs.use(['test3.js'],function(test3){
+    		console.log($(window).height());
+    		// console.log(test3.a);
+    		var data = {};
+    		 // var html = template('test_template',data);
+
+
+    	});
 	</script>
 </body>
 
