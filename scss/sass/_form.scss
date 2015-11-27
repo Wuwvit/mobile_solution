@@ -1,0 +1,57 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+// form
+
+$text-field-selectors: 'input[type="text"],
+                        input[type="password"],
+                        input[type="date"],
+                        input[type="datetime"],
+                        input[type="datetime-local"],
+                        input[type="month"],
+                        input[type="week"],
+                        input[type="time"],
+                        input[type="email"],
+                        input[type="tel"],
+                        input[type="url"],
+                        input[type="number"],
+                        input[type="search"],
+                        input[type="color"],
+                        textarea';
+$form-fontsize:rem(24px);
+$form-padding:rem(26px);
+$global-padding:rem(24px);
+
+#{$text-field-selectors} {
+  $padding-top: get-side($form-padding, top);
+  $padding-bottom: get-side($form-padding, bottom);
+  $height: $form-fontsize + $padding-top + $padding-bottom;
+  @include no-appearance;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: $height;
+  padding: $form-padding;
+  // margin-bottom: $global-padding;
+  // border: 1px solid $text-field-border;
+  border-radius: 4px;
+  outline: 0;
+  // background: $text-field-background;
+  // color: $text-field-color;
+  font-size: $form-fontsize;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+  transition: border .15s;
+
+  &:hover {
+    // border-color: $text-field-border-hover;
+    // background: $text-field-background-hover;
+    // color: $text-field-color-hover;
+  }
+
+  &:focus {
+    outline: 0;
+    // border-color: $text-field-border-focus;
+    // background: $text-field-background-focus;
+    // color: $text-field-color-focus;
+  }
+}

@@ -9,6 +9,12 @@ i{
 .c666 {
 	color:#666;
 }
+.c999 {
+	color:#999;
+}
+.bold{
+	font-weight:bold;
+}
 .small{
 	font-size:rem(22px);
 }
@@ -38,6 +44,19 @@ i{
 .link-btn-bg {
 	background-color:$color-primary;color:#fff;
 }
+.link-btn-bd-lg {
+	border:1px solid #ccc;line-height:rem(54px);
+}
+.link-btn-bg-lg {
+	width:100%;margin-left: 0;
+	height:rem(72px);line-height:rem(72px);
+}
+.link-orange-bd-lg {
+	width:100%;margin-left: 0;
+	height:rem(72px);line-height:rem(72px);
+	border:1px solid $color-orange;
+	color:$color-orange;
+}
 .btn-dia {
 	@extend %btn-dialog ;
 	@extend %inline-block;
@@ -49,5 +68,18 @@ i{
 .btn-dia-bg {
 	color:#fff;
 	background-color: $color-primary;
+}
+.mb20{
+	margin-bottom: rem(20px);
+}
+.mb30{
+	margin-bottom: rem(30px);
+}
+.mb40{
+	margin-bottom: rem(40px);
+}
+
+.text-center {
+	text-align:center;
 }
 

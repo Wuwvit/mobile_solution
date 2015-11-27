@@ -1,0 +1,96 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+@import "valiable";
+@import "function";
+@import "mixins";
+@import "extend";
+@import "common";
+@import "header";
+@import "icon";
+@import "dialog";
+@import "ajaxtips";
+@import "table";
+@import "form";
+@import "steps";
+
+body{
+	font-size:rem(24px);
+}
+//common
+//
+//common
+.query-input{
+	border:1px solid #ccc;
+	border-radius:4px;
+}
+.form-input {
+	display:block;
+	margin-bottom:$global-padding;
+	&.last{
+		margin-bottom: 0;
+	}
+}
+.error-msg {
+	height:rem(48px);line-height:rem(48px);
+	color:$color-orange;
+	text-align:center;
+
+}
+.query-submit {
+	width:100%;
+	height:rem(72px);margin:0;padding:0;border:0;
+	line-height:rem(72px);
+	background:$color-primary;
+	color:#fff;text-align:center;
+	border-radius:4px;
+	&:focus{
+		outline:0;
+	}
+}
+.envelope_wrap {
+
+}
+.envelope_box{
+	height:rem(520px);
+	margin:0 rem(36px);padding:rem(12px);
+	background:#fff -moz-repeating-linear-gradient(135deg, #38B863, #38B863 8px, #38B863 11px, #FFFFFF 11px, #FFFFFF 19px);/* FF3.6+ */
+	background:#fff -webkit-repeating-gradient(linear, 135deg, color-stop(8px, 38B863), color-stop(11px, 38B863), color-stop(11px, FFFFFF), color-stop(19px, FFFFFF));/* Chrome,Safari4+ */
+	background:#fff -webkit-repeating-linear-gradient(135deg, #38B863, #38B863 8px, #38B863 11px, #FFFFFF 11px, #FFFFFF 19px);/* Chrome10+,Safari5.1+ */
+	background:#fff -o-repeating-linear-gradient(135deg, #38B863, #38B863 8px, #38B863 11px, #FFFFFF 11px, #FFFFFF 19px);/* Opera 11.10+ */
+	background:#fff -ms-linear-gradient(135deg, #38B863, #38B863 8px, #38B863 11px, #FFFFFF 11px, #FFFFFF 19px);/* IE10+ */
+	border-radius:4px;
+}
+.envelope_content {
+	background:#f9f9f9;
+	width:100%;
+	height:100%;
+	.form_box {
+		padding:rem(68px);
+		padding-bottom: 0;
+		&.success_box {
+			padding-top:rem(164px);
+			.p-ok {
+				height:rem(45px);line-height:rem(45px);
+				width:rem(230px);margin:0 auto rem(40px);
+			}
+		}
+	}
+}
+
+
+
+
+
+.icon_css3_ok {
+	display:inline-block;
+	width:rem(45px);height:rem(45px);
+	background-color:$color-primary;
+	position: relative;border-radius:50% 50%;
+	background:url(#{imgurl}/icom/icon-ok.png) no-repeat left center;
+}
+.icon-success-ok {
+	background:url(#{$imgurl}/icon/icon-ok.png) no-repeat left center;
+	background-size:contain;
+}
+
+

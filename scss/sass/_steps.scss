@@ -1,0 +1,126 @@
+@charset "UTF-8";
+//-----------------------------------------------------
+// steps
+.steps_box {
+	margin:rem(70px) 0;
+	ul {
+	display: box;
+    display: -webkit-box;
+    box-align: center;
+    -webkit-box-align: center;
+    box-pack: center;
+    -webkit-box-pack: center;
+	}
+	li{
+		position: relative;
+		-webkit-box-flex: 1;
+	    box-flex: 1;
+	    display:block;
+	    width: 33.33333%;
+	    // height:rem(180px);
+	    text-align: center;
+	    vertical-align:middle;
+		&:before,&:after{
+	    	    content: "";
+			    position: absolute;
+			    width: 32%;
+			    height: 0;
+			    top: rem(22.5px);
+
+			    border-bottom: 1px solid #ccc;
+	    }
+	    &:before {
+	    	left: 0;
+	    }
+	    &:after {
+			right:0;
+	    }
+	    &:first-child{
+	    	&:before{
+	    		border:none;
+	    	}
+	    }
+	    &:last-child{
+	    	&:after{
+	    		border:none;
+	    	}
+	    }
+	}
+	.steps_de {
+		.steps_number{
+			display:inline-block;
+			width:rem(50px);
+			height:rem(50px);margin-bottom:rem(28px);
+			background:#ccc;
+			line-height:rem(50px);
+			color:#fff;text-align:center;
+			border-radius:50% 50%;
+		}
+		.steps_name {
+			display:block;
+		}
+	}
+	.steps_line {
+
+	}
+}
+%steps-change-color{
+	.steps_number {
+		background:$color-primary;
+	}
+	.steps_name {
+		color:$color-primary;
+	}
+}
+%com-steps01 {
+	&:first-child{
+			@extend %steps-change-color;
+			&:after{
+				border-color:$color-primary;
+			}
+		}
+		&:nth-child(2){
+			&:before{
+				border-color:$color-primary;
+			}
+		}
+}
+%com-steps02 {
+	&:nth-child(2){
+			@extend %steps-change-color
+		}
+}
+%com-steps03 {
+	&:nth-child(2){
+
+			&:after{
+				border-color:$color-primary;
+			}
+		}
+		&:nth-child(3){
+			@extend %steps-change-color;
+			&:before{
+				border-color:$color-primary;
+			}
+		}
+}
+.steps01 {
+	li{
+		@extend %com-steps01;
+	}
+}
+
+.steps02 {
+	li{
+		@extend %com-steps01;
+		@extend %com-steps02
+	}
+}
+.steps03 {
+	li{
+		@extend %com-steps01;
+		@extend %com-steps02;
+		@extend %com-steps03;
+
+	}
+}

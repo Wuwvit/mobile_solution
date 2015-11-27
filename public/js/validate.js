@@ -5,8 +5,7 @@
  * Portions of validate.js are inspired by CodeIgniter.
  * http://rickharrison.github.com/validate.js
  */
-
-(function(window, document, undefined) {
+define(function(require,exports,module){
     /*
      * If you would like an application-wide config, change these defaults.
      * Otherwise, use the setMessage() function to configure form specific messages.
@@ -609,12 +608,5 @@
         }
     };
 
-    window.FormValidator = FormValidator;
-})(window, document);
-
-/*
- * Export as a CommonJS module
- */
-if (typeof module !== 'undefined' && module.exports) {
     module.exports = FormValidator;
-}
+})

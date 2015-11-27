@@ -8,4 +8,4 @@ thinkphp_3.2.3_full.zip
 /Wiki
 /node_modules
 /*.rar
-/scss/.sass-cache/**/*.scssc
+/scss/**/*.scssc
