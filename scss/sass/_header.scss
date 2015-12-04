@@ -3,7 +3,8 @@
 .header{
 	position: relative;
 	height:rem(110px);
-	border-bottom:1px solid $color-primary;background-color:#fff;
+	border-bottom:1px solid #ececec;
+	background-color:#fff;
 	.hd_arrow_l {
 		position: absolute;display: block;
 		z-index:3;
@@ -16,6 +17,10 @@
 		width:100%;height:rem(110px);line-height:rem(110px);
 		color:$color-sub;text-align:center;font-size:rem(30px);
 
+	}
+	&.header-mb{
+		margin-bottom: rem(14px);
+		border:0;
 	}
 }
 

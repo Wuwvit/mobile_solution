@@ -1,23 +1,56 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 //-----------------------------------------------------
 // table
-.co_table {
-	padding:rem(32px);
-	.h_table {
-	width:100%;
-	tr{
-
-	}
-	td{
-		height:rem(76px);
-		background:#eff2f5;border:1px solid #fff;font-size:rem(24px);
-		text-align:center;
-		vertical-align:middle;
-		.table_des {
-			padding-left: rem(16px);
-			padding-right: rem(60px);
-			color:$color-sub;
-		}
-	}
+.table_primary {
+	background:#fff;
 }
+.co_table
+{
+    padding: rem(32px);
+    //表格无头部时
+    .h_table
+    {
+        width: 100%;
+		overflow:hidden;border-radius:4px;
+        td
+        {
+            font-size: rem(24px);
+
+            height: rem(76px);
+
+            text-align: center;
+            vertical-align: middle;
+
+            border: 1px solid #fff;
+            background: #eff2f5;
+            .table_des
+            {
+                padding-right: rem(60px);
+                padding-left: rem(16px);
+
+                color: $color-sub;
+            }
+        }
+    }
+    //表格有头部时
+    .table_default
+    {
+        > thead
+        {
+            > tr
+            {
+                > td
+                {
+                    // font-weight: bold;
+                    background: #eff2f5;
+                }
+            }
+        }
+        td
+        {
+
+            background: #f9f9f9;
+
+        }
+    }
 }

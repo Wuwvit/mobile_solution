@@ -10,6 +10,7 @@
 @import "dialog";
 @import "ajaxtips";
 @import "table";
+@import "tabledetail";
 @import "form";
 @import "steps";
 
@@ -19,6 +20,11 @@ body{
 //common
 //
 //common
+input.full-input{
+height:rem(90px);
+padding:rem(31px) rem(16px);border:0;
+font-size:rem(28px);border-radius:0;
+}
 .query-input{
 	border:1px solid #ccc;
 	border-radius:4px;
@@ -79,8 +85,21 @@ body{
 
 
 
+.mb14 {
+	margin-bottom: rem(14px);
+}
+%success_box {
+		padding-top:rem(164px);
+		.p-ok {
+			height:rem(45px);line-height:rem(45px);
+			width:rem(230px);margin:0 auto rem(40px);
+		}
+}
 
-
+%icon44 {
+	display:inline-block;
+	width:rem(44px);height:rem(44px);
+}
 .icon_css3_ok {
 	display:inline-block;
 	width:rem(45px);height:rem(45px);
@@ -92,5 +111,126 @@ body{
 	background:url(#{$imgurl}/icon/icon-ok.png) no-repeat left center;
 	background-size:contain;
 }
+.icon-name {
+	@extend %icon44;
+	background:url(#{$imgurl}/icon/icon-name.png) no-repeat left center;
+	background-size:rem(44px) rem(44px);
+}
+.icon-card {
+	@extend %icon44;
+	background:url(#{$imgurl}/icon/icon-card.png) no-repeat left center;
+	background-size:rem(44px) rem(44px);
+}
+.icon-tips {
+	background:url(#{$imgurl}/icon/icon-tips.png) no-repeat left center;
+	background-size:contain;
+}
+//实名认证
+.full-form-input {
+	background:#fff;
+	padding-left: rem(32px);
+	overflow:hidden;
+}
+.full-form-label {
+	height:rem(90px);position: relative;
 
+	.full-input {
+		display:inline-block;
+		margin-left: rem(180px);max-width:rem(500px);margin-bottom: 1px;
+	}
+	.span-label {
+		position: absolute;font-size:rem(28px);
+		width:rem(180px);height:rem(90px);
+		display:inline-block;padding-left: rem(60px);
+		line-height:rem(90px);
+	}
+}
+.full-line {
+	margin-left: rem(60px);
+	height:0;
+	width:100%;
+	border-bottom: 1px solid #ececec;
+}
+.tips_box {
+	padding:rem(48px) rem(62px) 0 rem(32px);
+}
+.tips_list {
+	list-style:decimal;margin-left: rem(36px);
+	li {
+		margin-bottom: rem(30px);
+	}
+}
+.tips-text {
+	padding-left: rem(30px);line-height:rem(24px);
+}
+.auth-group-submit {
+	padding:rem(46px) rem(114px);
+	input {
+		margin-bottom: rem(24px);
 
+	}
+}
+
+// 个人社保查询
+.personal_query_box {
+	@extend .mt24;
+}
+.personal_query_info {
+	// padding-top: rem(32px);
+	padding-top: rem(20px);
+	padding-bottom: rem(20px);
+	@extend %p-32;
+	background-color:#fff;
+}
+.placeholder_no_record {
+	margin:rem(100px) 0;
+	text-align:center;
+}
+.icon-palceholder-nothing {
+	padding:rem(60px) 0;margin-bottom: rem(30px);
+	background:url(#{$imgurl}icon/icon-placeholder-nothing.png) no-repeat center;
+	background-size:contain;
+}
+.extra_info {
+	padding-top: rem(32px);
+	@extend %p-32;
+}
+.auth_person_info {
+	padding:rem(24px) rem(120px);
+	text-align:left;background:#eff2f5;
+	margin:0 rem(32px);
+}
+.success_box_default {
+	@extend %success_box;
+}
+.table_person_detail {
+	@extend %p-32;
+	padding-top: rem(32px);
+	padding-bottom: rem(32px);
+	background-color:#fff;
+
+}
+.social_detail_table {
+	// border:1px solid #e5f2fa;
+}
+.banding{
+	padding-top:rem(40px);
+	padding-bottom:rem(40px);
+	@extend %p-32;
+	border-bottom:1px solid #dcdcdc;
+	margin: rem(24px) 0;
+	background-color:#fff;
+}
+.table_detal_head {
+	padding-left: rem(44px);
+	height:rem(28px);
+	background:url(#{$imgurl}icon/icon-data-time.png) no-repeat left center;
+	background-size:rem(28px) rem(28px);
+
+	line-height:rem(28px);
+	font-size:rem(28px);
+	.status{
+		padding-left: rem(48px);
+		font-size:rem(24px);
+	}
+}
