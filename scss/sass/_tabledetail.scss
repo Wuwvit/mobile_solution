@@ -1,0 +1,92 @@
+@charset 'UTF-8';
+//-----------------------------------------------------
+// 明细table
+.social_detail_table {
+    font-size:rem(24px);
+    table {
+        width:100%;
+        border:1px solid #e5f2fa;
+
+        border-radius:4px;
+        >tr{
+
+        }
+        >thead{
+            >tr{
+                >td{
+                    height:rem(70px);
+                    background-color:#dbe8f6;border-right:1px solid #fff;
+                    text-align:center;
+                    vertical-align:middle;
+                    &:first-child{
+                        border-left:0;
+                    }
+                    &:last-child{
+                        border-right:0;
+                    }
+                }
+                &:first-child{
+                    >td{
+                        &:nth-child(3){
+                            border-bottom:1px solid #fff;
+                        }
+                        &:nth-child(4){
+                            border-bottom:1px solid #fff;
+                        }
+                    }
+                }
+
+            }
+        }
+        >tbody {
+            >tr{
+                >td {
+                    text-align:center;
+                    vertical-align:middle;
+                    height:rem(54px);
+                    &:first-child{
+                        border-left:0;
+                    }
+                    &:last-child{
+                        border-right:0;
+                    }
+                }
+                &:nth-child(odd){
+                    background:#fff;
+                }
+                &:nth-child(even){
+                    background:#e2f0f9;
+                }
+                &:nth-child(9){
+                    >td{
+                        text-align:right;
+                        span{
+                            padding-right:rem(30px);
+                        }
+                    }
+
+                }
+                &:nth-child(10){
+                    >td{
+                        border-right:1px solid #fff;
+                        &:last-child{
+                            border-right:0;
+                        }
+                    }
+
+                }
+                &:last-child{
+                    >td{
+                        background-color:#dbe8f6;
+                        border-top:1px solid #fff;
+                        border-right:1px solid #fff;
+                        &:last-child{
+                            border-right:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

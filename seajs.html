@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>标题</title>
+    <link rel="stylesheet" href="public/css/common/base.css">
+    <link rel="stylesheet" href="public/css/content/social_query.css">
+</head>
+
+<body class="gray">
+    <header class="header">
+        <a href="javascript:void(0)" class="hd_arrow_l"></a>
+        <div class="title">
+            <span>实名认证</span>
+        </div>
+        <div class="hd_arrow_r">
+            <a href="./index.html" class="icon-home-hd"></a>
+        </div>
+    </header>
+    <!-- 实名认证 form-->
+    <section class="authentication">
+        <div class="form_box">
+            <form action="###" name="certification_form">
+
+                <div class="tips_box">
+                	<p class="icon-tips mb30 tips-text">温馨提示</p>
+                    <ul class="tips_list">
+                        <li>为了保障您的账号与资金安全，请如实填写您的账号资 料，提交后不可修改。
+                        </li>
+                        <li>通过实名认证，可查看社保历史缴纳记录。</li>
+                    </ul>
+                </div>
+                <div class="">
+                    <div class="full-form-input">
+                        <label class="full-form-label">
+                            <span class="icon-name span-label">姓&emsp;&emsp;名</span>
+                            <input type="text" class="full-input" placeholder="输入真实姓名"name="name">
+                        </label>
+                        <p class="full-line"></p>
+                        <label class="full-form-label">
+                            <span class="icon-card span-label">身份证号</span>
+                            <input type="text" class="full-input" placeholder="输入15或18位证件号码" name="card_no">
+                        </label>
+                    </div>
+                    <div class="error-msg error-msg-full ">15位号码应全为数字，18位号码末位可以为数字或X</div>
+                    <div class="auth-group-submit">
+                    <input type="submit" class="input-submit query-submit" value="确认">
+                    <a href="###" class="link-btn link-btn-bd link-orange-bd-lg">返回</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="public/js/sea.js"></script>
+    <script>
+    	seajs.config({
+		  alias: {
+		    'zepto': 'zepto.min.js',
+            'jquery':'jquery.min.js',
+		    'jquery-validate' : 'jquery.validate.js',
+		    'template-native':'template-native.js'
+		  }
+		});
+    </script>
+    <script>
+    	seajs.use(['certification.js'],function(test3){
+    		console.log($(window).height());
+    		// console.log(test3.a);
+    		var data = {};
+    		 // var html = template('test_template',data);
+    	});
+    	// seajs.use(['jquery','jquery.validate'],function($,validate) {
+
+    	// })
+   	</script>
+</body>
+
+</html>
